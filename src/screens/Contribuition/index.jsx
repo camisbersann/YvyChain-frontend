@@ -24,6 +24,7 @@ export default function Contribuition() {
         </View>
                 <View style={styles.subdiv}>
                     <Text style={styles.textosubdiv}>A sua contribuição é muito importante para nós. Juntos, podemos fazer a diferença!</Text>
+                    <Image source={require('../../../assets/ivychain.png')} style={styles.image2}/>
                 </View>
         </ScrollView>
     </View>

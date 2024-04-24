@@ -61,5 +61,11 @@ const styles = StyleSheet.create({
         fontFamily: "Roboto",
         textAlign: "left",
     },
+    image2: {
+        width: 50,
+        height: 130,
+        marginTop: 10,
+        marginLeft: 125,
+    },
 });
 export default styles;
