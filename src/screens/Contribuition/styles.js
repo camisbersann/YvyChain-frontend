@@ -18,5 +18,13 @@ const styles = StyleSheet.create({
         textAlign: "center",
         margin: 10,
     },
+    image: {
+        width: 100,
+        height: 200,
+        margin: 10,
+    },
+    divpequena: {
+        backgroundColor: "#EED2B8",
+    },
 });
 export default styles;
