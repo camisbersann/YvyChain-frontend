@@ -26,5 +26,8 @@ const styles = StyleSheet.create({
     divpequena: {
         backgroundColor: "#EED2B8",
     },
+    divgrande: {
+        display: "flex",
+    },
 });
 export default styles;
