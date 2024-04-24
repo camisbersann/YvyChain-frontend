@@ -4,6 +4,7 @@ import Home from "../screens/Home";
 import Profile from "../screens/Profile";
 import Category from "../screens/Category";
 import Contribuition from "../screens/Contribuition";
+import AboutUs from "../screens/AboutUs";
 
 const Stack = createNativeStackNavigator();
 
@@ -14,6 +15,7 @@ const StackRoutes = () => {
       <Stack.Screen name="Profile" component={Profile} />
       <Stack.Screen name="Category" component={Category} />
       <Stack.Screen name="Contribuition" component={Contribuition} />
+      <Stack.Screen name="AboutUs" component={AboutUs} />
     </Stack.Navigator>
   );
 };
