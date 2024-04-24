@@ -13,6 +13,10 @@ export default function AboutUs() {
             <Text style={styles.titulocoluna}>Por que do nome Yvy Chain?</Text>
             <Text style={styles.textcoluna}>"Yvy", que deriva do guarani, língua indígena nativa da América do Sul, significa "terra" ou "natureza". Este termo carrega a importância e a beleza da natureza que nos cerca. "Chain", por sua vez, é uma alusão ao conceito de cadeia, um elo que une elementos de forma interdependente.  Nossa empresa acredita firmemente na integração harmoniosa entre natureza e tecnologia, reconhecendo que ambas são essenciais para um futuro sustentável.</Text>
             </View>
+            <View style={styles.coluna2}>
+             <Text style={styles.titulocoluna}>Nosso Objetivo</Text>
+                <Text style={styles.textcoluna}>Unir a vanquarda da inovação tecnológica com as políticas de sustentabilidade mais progressistas. Juntos, estamos determinados a criar soluções que não apenas respeitem o meio ambiente, mas também impulsionem o desenvolvimento econômico e social de forma equilibrada e duradoura.</Text>
+                </View>   
         </View>
     </ScrollView>
     </View>
