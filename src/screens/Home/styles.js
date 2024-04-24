@@ -8,18 +8,23 @@ const styles = StyleSheet.create({
         backgroundColor: "#3B5B30"
     },
     divStyle: {
-        margin: 30,  
-        padding: 30, 
-        backgroundColor: "#EED2B8", 
-        borderRadius: 5, 
-        width: '80%', 
+        margin: 30,
+        padding: 30,
+        backgroundColor: "#EED2B8",
+        borderRadius: 5,
+        width: '80%',
+        borderRadius: 10,
         
     },
-    text: {
-        color: "#EED2B8",
-        margin: 5,
-        fontFamily: 'sans-serif',
-    }
+    textosubdiv: {
+    color: "#EED2B8",
+    fontSize: 15,
+    fontFamily: "Roboto",
+        textAlign: "center",
+    margin: 20,
+        padding: 20,
+},
+
 });
 
 export default styles;
