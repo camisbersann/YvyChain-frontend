@@ -21,13 +21,11 @@ export default function Proposal() {
       </View>
       
       <View style={styles.divStyle}>
-      
-        <Text>Representa um passo significativo para a realização de progressos substanciais em sustentabilidade global.</Text>
+          <Text>Representa um passo significativo para a realização de progressos substanciais em sustentabilidade global.
+            Para criar soluções que não apenas respeitem o meio ambiente, mas também promovam o desenvolvimento econômico e social de maneira equilibrada e duradoura.
+        </Text>
       </View>
 
-      <View style={styles.divStyle}>
-        <Text style={styles.divStyle}>Para criar soluções que não apenas respeitem o meio ambiente, mas também promovam o desenvolvimento econômico e social de maneira equilibrada e duradoura.</Text>
-        </View>
       
     
 </ScrollView>

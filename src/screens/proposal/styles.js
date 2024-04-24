@@ -10,10 +10,10 @@ const styles = StyleSheet.create({
     divStyle: {
         margin: 30,
         padding: 30,
-        backgroundColor: "#EED2B8",
         borderRadius: 5,
         width: '80%',
-        borderRadius: 10,
+      borderRadius: 10,
+        marginRight: 170,
         
     },
     textosubdiv: {
@@ -22,7 +22,8 @@ const styles = StyleSheet.create({
     fontFamily: "Roboto",
         textAlign: "center",
     margin: 20,
-        padding: 20,
+      padding: 20,
+        marginRight: 170,
 },
 
 });
