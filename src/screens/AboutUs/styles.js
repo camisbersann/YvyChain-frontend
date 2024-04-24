@@ -32,5 +32,13 @@ const styles = StyleSheet.create({
         marginTop: 10,
         fontFamily: "Roboto",
     },
+    titulolink: {
+        fontSize: 16,
+        fontWeight: 'bold',
+        color: "#EED2B8",
+        textAlign: 'center',
+        marginTop: 20,
+        fontFamily: "Roboto",
+    },
 });
 export default styles;
