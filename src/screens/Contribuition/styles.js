@@ -10,6 +10,13 @@ const styles = StyleSheet.create({
         fontSize: 30,
         fontWeight: "bold",
         fontFamily: "Roboto",
-    }
+    },
+    subtitulo: {
+        color: "#EED2B8",
+        fontSize: 13,
+        fontFamily: "Roboto",
+        textAlign: "center",
+        margin: 10,
+    },
 });
 export default styles;
