@@ -173,35 +173,7 @@ export default function CadastroEmpresa() {
           <Text className={`text-black text-center`}>Cadastrar Empresa</Text>
         </TouchableOpacity>
       )}
-      <View>
-        {empresas.map((empresa) => (
-          <View
-            key={empresa.id}
-            style={tw`border border-gray-800 p-2 rounded-lg mt-2`}
-          >
-            <Text>{empresa.nome}</Text>
-            <Text>{empresa.cnpj}</Text>
-            <Text>{empresa.email}</Text>
-            <Text>{empresa.endereco}</Text>
-            <Text>{empresa.telefone}</Text>
-            <Text>{empresa.notaPegadaEcologica}</Text>
-            <View style={tw`flex-row`}>
-              <TouchableOpacity
-                style={tw`bg-blue-500 py-2 rounded-lg`}
-                onPress={() => fillInputs(empresa)}
-              >
-                <Text style={tw`text-white text-center`}>Editar</Text>
-              </TouchableOpacity>
-              <TouchableOpacity
-                style={tw`bg-red-500 py-2 rounded-lg ml-2`}
-                onPress={() => deleteEmpresa(empresa.id)}
-              >
-                <Text style={tw`text-white text-center`}>Deletar</Text>
-              </TouchableOpacity>
-            </View>
-          </View>
-        ))}
-      </View>
+      
     </ScrollView>
   );
 }
