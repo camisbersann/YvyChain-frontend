@@ -7,6 +7,7 @@ import Contribuition from "../screens/Contribuition";
 import CadastroEmpresa from "../screens/CadastroEmpresa";
 import VerEmpresas from "../screens/VerEmpresas";
 import DetalhesEmpresa from "../screens/DetalhesEmpresa";
+import CadastroSetor from "../screens/CadastroSetor";
 
 const Drawer = createDrawerNavigator();
 
@@ -20,6 +21,7 @@ const DrawerRoutes = () => {
       <Drawer.Screen name="CadastroEmpresa" component={CadastroEmpresa} />
       <Drawer.Screen name="VerEmpresas" component={VerEmpresas} />
       <Drawer.Screen name="DetalhesEmpresa" component={DetalhesEmpresa} />
+      <Drawer.Screen name="CadastroSetor" component={CadastroSetor} />
     </Drawer.Navigator>
   );
 };
