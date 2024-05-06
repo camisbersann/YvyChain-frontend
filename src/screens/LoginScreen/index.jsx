@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import axios from 'axios';
-import tw from 'tailwind-react-native-classnames';
+import styles from './styles';
 
 const LoginScreen = () => {
     const [cnpj, setCnpj] = useState('');
@@ -31,23 +31,25 @@ const LoginScreen = () => {
     ]
 
     return (
-        <View style={tw`flex-1 items-center justify-center p-5 bg-white`}>
+        <View style={styles.container}>
             <TextInput
-                style={tw`w-full mb-3 border-b border-gray-300 py-2 px-3`}
+            style={styles.textoinput}
                 placeholder="Digite o CNPJ"
                 value={cnpj}
                 onChangeText={setCnpj}
                 keyboardType="numeric"
             />
             <TextInput
-                style={tw`w-full mb-3 border-b border-gray-300 py-2 px-3`}
+            style={styles.textoinput}
                 placeholder="Digite a senha (ID da empresa)"
                 value={senha}
                 onChangeText={setSenha}
                 secureTextEntry
             />
-            <TouchableOpacity style={tw`w-full bg-blue-500 p-3 rounded-lg`} onPress={handleLogin}>
-                <Text style={tw`text-white text-center font-bold`}>Login</Text>
+            <TouchableOpacity 
+                style={styles.botao}
+                onPress={handleLogin}>
+                <Text style={styles.textobotao}>Login</Text>
             </TouchableOpacity>
         </View>
     );
