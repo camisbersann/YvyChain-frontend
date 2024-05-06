@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     divinputs: {
         margin: 20,
         borderRadius: 10,
-        padding: 130,
+        padding: 100,
         backgroundColor: "#EED2B8",
         justifyContent: "center",
         width: 300,
@@ -46,6 +46,15 @@ const styles = StyleSheet.create({
     textobotao: {
         textAlign: "center",
         fontWeight: "bold",
+    },
+    textoinput: {
+        width: 250,
+        marginLeft: -90,
+        borderBottomColor: "#000",
+        borderBottomWidth: 1,
+        padding: 10,
+        margin: 10,
+        fontSize: 16,
     },
 });
 export default styles;
