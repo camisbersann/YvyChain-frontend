@@ -311,7 +311,32 @@ const DrawerRoutes = () => {
         },
       }}
       />
-      <Drawer.Screen name="CadastroProdutos" component={CadastroProdutos} />
+      <Drawer.Screen name="CadastroProdutos" component={CadastroProdutos}
+       options={{
+        title: "Cadastro Produtos",
+        headerTitle: "",
+        headerTitle: () => (
+          <View style={{ flexDirection: "row", alignItems: "right" }}>
+            <Image
+              source={require("../../assets/logo.png")}
+              style={{
+                width: 75,
+                height: 75,
+                marginLeft: 260,
+                marginBottom: 20,
+                marginTop: 18,
+              }}
+            />
+          </View>
+        ),
+        headerStyle: {
+          backgroundColor: "#3B5B30",
+        },
+        drawerStyle: {
+          backgroundColor: "#3B5B30",
+          textColor: "#fff",
+        },
+      }} />
       <Drawer.Screen name="VerProdutos" component={VerProdutos} />
       <Drawer.Screen name="StackRoutes" component={StackRoutes} options={{
         drawerItemStyle: { height: 0 },  // Esconde o item no menu
