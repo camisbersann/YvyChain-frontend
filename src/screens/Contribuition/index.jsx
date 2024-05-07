@@ -5,9 +5,10 @@ import Title from '../../components/Title';
 export default function Contribuition() {
   return (
     <View style={styles.container}>
-      <Title  style={styles.title} title={"SUA CONTRIBUIÇÃO"}/>
-            <Text style={styles.subtitulo}>Como a sua participação no projeto pode contribuir para o meio ambiente sustentavel e um desenvolvimento humano melhor?</Text>
+      
         <ScrollView>
+        <Title  style={styles.title} title={"SUA CONTRIBUIÇÃO"}/>
+            <Text style={styles.subtitulo}>Como a sua participação no projeto pode contribuir para o meio ambiente sustentavel e um desenvolvimento humano melhor?</Text>
         <View style={styles.divgrande}>
             <View style={styles.divpequena}>
                 <Image source={require('../../../assets/maos.jpg')} style={styles.image}/>
@@ -27,6 +28,7 @@ export default function Contribuition() {
                     <Image source={require('../../../assets/ivychain.png')} style={styles.image2}/>
                 </View>
         </ScrollView>
+
     </View>
   )
 }
