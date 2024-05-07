@@ -61,7 +61,32 @@ const DrawerRoutes = () => {
 
       <Drawer.Screen name="Profile" component={Profile} />
       <Drawer.Screen name="Category" component={Category} />
-      <Drawer.Screen name="Contribuition" component={Contribuition} />
+      <Drawer.Screen name="Contribuition" component={Contribuition} 
+       options={{
+        title: "Contribuição",
+        headerTitle: "",
+        headerTitle: () => (
+          <View style={{ flexDirection: "row", alignItems: "right" }}>
+            <Image
+              source={require("../../assets/logo.png")}
+              style={{
+                width: 75,
+                height: 75,
+                marginLeft: 260,
+                marginBottom: 20,
+                marginTop: 18,
+              }}
+            />
+          </View>
+        ),
+        headerStyle: {
+          backgroundColor: "#3B5B30",
+        },
+        drawerStyle: {
+          backgroundColor: "#3B5B30",
+          textColor: "#fff",
+        },
+      }}/>
       <Drawer.Screen name="CadastroEmpresa" component={CadastroEmpresa} />
       <Drawer.Screen name="VerEmpresas" component={VerEmpresas} />
       <Drawer.Screen name="DetalhesEmpresa" component={DetalhesEmpresa} 
