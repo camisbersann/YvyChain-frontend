@@ -2,8 +2,6 @@ import { createDrawerNavigator } from "@react-navigation/drawer";
 import { View, Image } from "react-native";
 
 import Home from "../screens/Home";
-import Profile from "../screens/Profile";
-import Category from "../screens/Category";
 import Contribuition from "../screens/Contribuition";
 import CadastroEmpresa from "../screens/CadastroEmpresa";
 import VerEmpresas from "../screens/VerEmpresas";
@@ -59,8 +57,6 @@ const DrawerRoutes = () => {
         },
       }}/>
 
-      <Drawer.Screen name="Profile" component={Profile} />
-      <Drawer.Screen name="Category" component={Category} />
       <Drawer.Screen name="Contribuition" component={Contribuition} 
        options={{
         title: "Contribuição",
