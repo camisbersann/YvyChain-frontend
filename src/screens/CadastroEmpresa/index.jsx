@@ -11,7 +11,6 @@ import axios from "axios";
 import { useState } from "react";
 import { useEffect } from "react";
 import tw from "tailwind-react-native-classnames";
-import FooterBottom from "../../components/FooterBottom/index.jsx";
 
 export default function CadastroEmpresa() {
   const navigation = useNavigation();
@@ -115,12 +114,10 @@ export default function CadastroEmpresa() {
   return (
     <ScrollView style={{ backgroundColor: "#EED2B8" }}>
       <TouchableOpacity
-        className={` py-2 rounded-lg w-80 mx-auto my-8`}
+        className={`bg-green-200 py-2 rounded-lg w-80 mx-auto my-8`}
         onPress={() => navigation.navigate("Home")}
-        style={{ backgroundColor: "#3B5B30" }}
       >
-        
-        <Text className={`text-white text-center`}>Voltar</Text>
+        <Text className={`text-black text-center`}>Voltar</Text>
       </TouchableOpacity>
       <Text style={tw`text-2xl font-bold text-center mb-4`}>
         Cadastro de Empresa
@@ -163,51 +160,20 @@ export default function CadastroEmpresa() {
       </View>
       {isEditing ? (
         <TouchableOpacity
-          className={` mb-8 mt-8 py-2 rounded-lg`}
+          className={`bg-green-200 py-2 rounded-lg`}
           onPress={() => putEmpresas(editId)}
-          style={{ backgroundColor: "#3B5B30" }}
         >
-          <Text className={`text-white text-center`}>Editar Empresa</Text>
+          <Text className={`text-black text-center`}>Editar Empresa</Text>
         </TouchableOpacity>
       ) : (
         <TouchableOpacity
-          className={`py-2 mb-8 mt-8 rounded-lg w-80 mx-auto`}
+          className={`bg-green-200 py-2 rounded-lg w-80 mx-auto`}
           onPress={postEmpresa}
-          style={{ backgroundColor: "#3B5B30" }}
         >
-          <Text className={`text-white text-center`}>Cadastrar Empresa</Text>
+          <Text className={`text-black text-center`}>Cadastrar Empresa</Text>
         </TouchableOpacity>
       )}
-      <View className={`w-80 mx-auto`}>
-        {empresas.map((empresa) => (
-          <View
-            key={empresa.id}
-            className={`bg-slate-400 p-2 rounded-lg mb-2`}
-          >
-            <Text className={`text-white`}>Nome: {empresa.nome}</Text>
-            <Text className={`text-white`}>CNPJ: {empresa.cnpj}</Text>
-            <Text className={`text-white`}>Email: {empresa.email}</Text>
-            <Text className={`text-white`}>Endereço: {empresa.endereco}</Text>
-            <Text className={`text-white`}>Telefone: {empresa.telefone}</Text>
-            <Text className={`text-white`}>
-              Nota Pegada Ecológica: {empresa.notaPegadaEcologica}
-            </Text>
-            <TouchableOpacity
-              className={`py-2 rounded-lg bg-slate-500 mt-2`}
-              onPress={() => fillInputs(empresa)}
-            >
-              <Text className={`text-white text-center`}>Editar</Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-              className={`py-2 rounded-lg bg-slate-500 mt-2`}
-              onPress={() => deleteEmpresa(empresa.id)}
-            >
-              <Text className={`text-white text-center`}>Deletar</Text>
-            </TouchableOpacity>
-          </View>
-        ))}
-      </View>
-      <FooterBottom/>
+      
     </ScrollView>
   );
 }
