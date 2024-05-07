@@ -21,26 +21,29 @@ export default function VerEmpresas() {
     }
   };
 
+
   useEffect(() => {
     getEmpresas();
   }, []);
 
   return (
-    <View style={tw`flex-1 bg-white`}>
-      <ScrollView style={tw`flex-1`}>
+    <View className={`flex-1`} style={{ backgroundColor: "#314D27" }}>
+      <ScrollView className={`flex-1`}>
         {empresas.map((empresa) => (
-          <TouchableOpacity
-            key={empresa._id}
-            onPress={() =>
-              navigation.navigate("DetalhesEmpresa", { id: empresa._id })
-            }
-            style={tw`bg-gray-100 p-4 m-2 rounded-lg`}
-          >
-            <Text style={tw`text-lg font-bold`}>{empresa.nome}</Text>
-            <Text style={tw`text-sm`}>{empresa.email}</Text>
-            <Text style={tw`text-sm`}>Nota de impacto ambiental:</Text>
-            <Text style={tw`text-sm`}>{empresa.notaPegadaEcologica}</Text>
-          </TouchableOpacity>
+          <View
+          key={empresa.id}
+          className={`bg-slate-400 p-2 rounded-lg mb-2`}
+        >
+          <Text className={`text-white text-lg mx-auto`}>Nome: {empresa.nome}</Text>
+          <View className={`bg-slate-500 h-1 w-full mt-4 mb-4`}></View>
+          <Text className={`text-white`} >CNPJ: {empresa.cnpj}</Text>
+          <Text className={`text-white`}>Email: {empresa.email}</Text>
+          <Text className={`text-white`}>Endereço: {empresa.endereco}</Text>
+          <Text className={`text-white`}>Telefone: {empresa.telefone}</Text>
+          <Text className={`text-white`}>
+            Nota Pegada Ecológica: {empresa.notaPegadaEcologica}
+          </Text>
+        </View>
         ))}
       </ScrollView>
     </View>
