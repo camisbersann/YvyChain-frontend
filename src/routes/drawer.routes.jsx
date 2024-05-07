@@ -17,12 +17,20 @@ import VerProdutos from "../screens/VerProdutos";
 import StackRoutes from "./stack.routes";
 import PaginaGerenciamento from "../screens/PaginaGerenciamento";
 import LoginScreen from "../screens/LoginScreen";
+import CustomDrawerContent from "../components/ImageDrawer";
 
 const Drawer = createDrawerNavigator();
 
 const DrawerRoutes = () => {
   return (
-    <Drawer.Navigator>
+    <Drawer.Navigator drawerContent={(props) => <CustomDrawerContent {...props} />}
+    screenOptions={{
+      drawerActiveTintColor: "white",
+      headerTintColor: "white",
+      drawerLabelStyle: {
+        color: "white",
+      },
+    }} >
       <Drawer.Screen name="Home" component={Home} />
       <Drawer.Screen name="Profile" component={Profile} />
       <Drawer.Screen name="Category" component={Category} />
