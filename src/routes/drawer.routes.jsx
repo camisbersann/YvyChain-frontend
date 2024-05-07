@@ -87,7 +87,32 @@ const DrawerRoutes = () => {
           textColor: "#fff",
         },
       }}/>
-      <Drawer.Screen name="CadastroEmpresa" component={CadastroEmpresa} />
+      <Drawer.Screen name="CadastroEmpresa" component={CadastroEmpresa} 
+       options={{
+        title: "Cadastro Empresa",
+        headerTitle: "",
+        headerTitle: () => (
+          <View style={{ flexDirection: "row", alignItems: "right" }}>
+            <Image
+              source={require("../../assets/logo.png")}
+              style={{
+                width: 75,
+                height: 75,
+                marginLeft: 260,
+                marginBottom: 20,
+                marginTop: 18,
+              }}
+            />
+          </View>
+        ),
+        headerStyle: {
+          backgroundColor: "#3B5B30",
+        },
+        drawerStyle: {
+          backgroundColor: "#3B5B30",
+          textColor: "#fff",
+        },
+      }}/>
       <Drawer.Screen name="VerEmpresas" component={VerEmpresas} />
       <Drawer.Screen name="DetalhesEmpresa" component={DetalhesEmpresa} 
       options={{
