@@ -1,6 +1,7 @@
 import { View, Text, Image, ScrollView } from 'react-native';
 import styles from './styles';
 import Title from '../../components/Title';
+import FooterBottom from '../../components/FooterBottom';
 
 export default function Contribuition() {
   return (
@@ -27,6 +28,7 @@ export default function Contribuition() {
                     <Text style={styles.textosubdiv}>A sua contribuição é muito importante para nós. Juntos, podemos fazer a diferença!</Text>
                     <Image source={require('../../../assets/ivychain.png')} style={styles.image2}/>
                 </View>
+        <FooterBottom/>
         </ScrollView>
 
     </View>

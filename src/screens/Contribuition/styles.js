@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
     container: {
         flex:1,
-        backgroundColor: "#3B5B30",
+        backgroundColor: "#314D27",
     },
     title: {
         color: "EED2B8",
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
         marginRight: "auto",
     },
     image: {
-        width: 201,
+        width: 301,
         height: 200,
         margin: 10,
         marginLeft: -1,
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     divpequena: {
         backgroundColor: "#EED2B8",
         margin: 10,
-        width: 200,
+        width: 300,
         height: 400,
         borderRadius: 10,
         marginTop: 16,
@@ -53,7 +53,10 @@ const styles = StyleSheet.create({
         fontFamily: "Roboto",
         textAlign: "justify",
         margin: 10,
-        textAlign: "left",
+        width:"80%",
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        marginTop: 25
     },
     subdiv: {
       
